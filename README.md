@@ -35,6 +35,7 @@ __5 Attach an identity to database__
 __6 Suggested improvements__
 - A file selector for the Default database text field
 - A script editor
-- A Rove identity selection in the right-click menu
+- Some way of selecting en existing identity from the selected database
+
 
 
