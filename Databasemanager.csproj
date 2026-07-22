@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>dnms.ico</ApplicationIcon>
+    <Title>DB manager</Title>
+    <Company>Finansdrift</Company>
+    <Description>An ultra-fast database manager</Description>
+    <Copyright>Hibx</Copyright>
+    <PackageProjectUrl>https://www.finansdrift.no</PackageProjectUrl>
+    <PackageIcon>dbman.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\RestoreDatabase.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="dnms.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="dbman.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Output\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
