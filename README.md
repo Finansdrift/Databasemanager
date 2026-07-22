@@ -35,7 +35,7 @@ __5 Attach an identity to database__
 __6 Suggested improvements__
 - A file selector for the Default database text field
 - A script editor
-- Some way of selecting en existing identity from the selected database
+- Some way of selecting an existing identity from the selected database
 
 
 
